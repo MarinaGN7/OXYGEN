@@ -298,12 +298,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 139px 0px 103px 83px;
+    padding-top: 139px;
 }
 
 .portfolio-title {
     letter-spacing: -1.65px;
-    margin-right: 356px;
+    margin-right: 362px;
+    margin-bottom: 103px;
+    padding-left: 83px;
+}
+.portfolio__buttons {
+    margin-bottom: 110px;
 }
 
 .portfolio__btn {
@@ -313,6 +318,9 @@ body {
     color: #333333;
     background-color: #fff;
     margin-right: 36px;
+}    
+.portfolio__btn:last-child {
+    margin-right: 0;
 }
 
 .portfolio__btn:hover:after {
