@@ -336,12 +336,15 @@ body {
 }
 
 .portfolio__gallery-items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* flex-wrap: wrap; */
     /* margin-bottom: 72px; */
 }
-.portfolio-gallery-img img {
-    height: 494px;
+.portfolio-gallery-img img{
+    /* width: 343px;  */
+    /* background-color: #ededed; */
+    object-fit: cover;
 }
 .portfolio__gallery-title {
     font-weight: 600;
