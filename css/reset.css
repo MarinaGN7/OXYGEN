@@ -33,7 +33,7 @@ ul, ul li {
     list-style: none;
 }
 img, svg {
-    vertical-align: top;
+    vertical-align: top; 
     max-width: 100%;
     height: auto;
 }
@@ -51,12 +51,12 @@ button, input[type="submit"] {
     background: none;
     cursor: pointer;
 }
-/*
+
 input:focus, input:active,
 button:focus, button:active {
     outline: none;
 }
-*/
+
 button::-moz-focus-inner {
     padding: 0;
     border: 0;
