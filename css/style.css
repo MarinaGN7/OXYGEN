@@ -261,30 +261,43 @@ body {
 
 }
 
-@media(max-width: 767.98px) {
+@media(max-width: 992.98px) {
     .about__inner {
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
         padding-bottom: 15px;
         padding-top: 10px;
         min-height: 240px;
+
+
+
+
     }
 
+
+
     .about__title {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 10px;
         margin-right: 0;
         line-height: 40px;
+        align-self: center;
+        /* text-align: center; */
     }
 
+}
+
+@media(max-width: 767.98px) {
+    .about__title {
+        font-size: 22px;
+    }
 
     .about__text {
         font-size: 12px;
         line-height: 18px;
     }
-
 }
+
 
 /* ================================= */
 .expertise__inner {
@@ -522,6 +535,7 @@ body {
     .expertise__item:last-child {
         margin-bottom: 0;
     }
+
     .expertise__item-img {
         margin-right: 10px;
     }
@@ -534,8 +548,7 @@ body {
 
 .features__inner {
     display: flex;
-    max-height: 840px;
-
+    min-height: 840px;
 }
 
 .features__img {
@@ -556,6 +569,10 @@ body {
 }
 
 @media(max-width: 1364px) {
+    .features__inner {
+        min-height: 600px;
+    }
+
     .features__title {
         font-size: 46px;
         margin-bottom: 30px;
@@ -563,59 +580,68 @@ body {
 
     .features__img {
         margin-right: 80px;
-        max-width: 70%;
+        width: 30%;
     }
 
     .features__info {
-        padding-top: 120px;
         padding-right: 15px;
     }
 }
 
-@media(max-width: 1110px) {
+@media(max-width: 992.98px) {
     .features__inner {
         flex-direction: column;
-        justify-content: center;
-        min-height: 600px;
     }
 
     .features__title {
+        font-size: 34px;
         margin-bottom: 15px;
-        padding-left: 80px;
+        align-self: center;
+    }
+
+    .features__text {
+        align-self: center;
+        max-width: 800px;
+        padding-bottom: 15px;
     }
 
     .features__info {
-        max-width: none;
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px;
+        max-width: 100%;
     }
 
     .features__img {
         margin-right: 0;
         align-self: center;
         max-height: 400px;
-        width: 70%;
-    }
-}    
-
-@media(max-width: 992.98px) {
-    .features__title {
-        font-size: 34px;
-        padding-left: 50px;
+        width: 94%;
     }
 }
 
 @media(max-width: 767.98px) {
+    .features__inner {
+        min-height: 400px;
+
+    }
+
     .features__title {
         font-size: 26px;
         line-height: 45px;
         margin-bottom: 8px;
-        padding-left: 15px;
     }
 
     .features__text {
         font-size: 12px;
         line-height: 18px;
-        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .features__img {
+        max-height: 250px;
     }
 }
 
@@ -746,45 +772,56 @@ body {
     padding-top: 42px;
     margin-bottom: 17px;
 }
+
 @media(max-width: 1364px) {
     .portfolio__inner {
         padding: 40px 15px 15px 15px;
-        min-height: 250px;
+        min-height: 200px;
     }
+
     .portfolio-title {
         font-size: 46px;
         padding-left: 0;
         margin-right: 130px;
         margin-bottom: 40px;
     }
+
     .portfolio__buttons {
-       margin-bottom: 40px;
+        margin-bottom: 40px;
     }
 }
+
 @media(max-width: 992.98px) {
     .portfolio__head {
         justify-content: space-between;
     }
+
     .portfolio-title {
         font-size: 34px;
     }
+
     .portfolio__buttons {
         display: flex;
         flex-direction: column;
         margin-bottom: 0;
     }
+
     .portfolio__btn {
         margin-right: 0;
         margin-bottom: 14px;
     }
+
     .portfolio__btn:last-child {
         margin-bottom: 0;
     }
 }
+
 @media(max-width: 767.98px) {
-    .portfolio__inner{
+    .portfolio__inner {
         padding-top: 15px;
+        min-height: 175px;
     }
+
     .portfolio-title {
         font-size: 26px;
         line-height: 45px;
@@ -1540,7 +1577,7 @@ textarea {
         width: 100%;
     }
 }
-    
+
 /* ================================ */
 .footer__content {
     background-color: #373a39;
@@ -1636,5 +1673,4 @@ textarea {
     .logo__image {
         width: 34px;
     }
-}   
-
+}
