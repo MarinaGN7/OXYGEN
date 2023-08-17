@@ -1,16 +1,21 @@
-$(document).ready(function(){
-   $('.slider').slick({
-      arrows:true,
+$(function(){
+
+   $('.slider-slider').slick({
       dots:true,
-      adaptiveHeight:true,
-      speed:500,
-      easing:'ease',
-      swipe:true,
-      appenDots:$('.slider__content'),
+      arrows:true,
+      responsive:[
+         {
+            breakpoint: 767.98,
+            settings: {
+               dots:false,
+            }
+         }
+      ]
    });
-    
 
 });
+
+
   
 
 const menuBtn = document.querySelector('.menu__btn');
