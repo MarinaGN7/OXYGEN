@@ -918,8 +918,8 @@ body {
 }
 
 .story-video-object {
-    width: 100%;
-    height: auto;
+    width: 100%; 
+    height: auto; 
     vertical-align: top; 
     overflow: hidden;
 }
