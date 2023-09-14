@@ -833,7 +833,7 @@ body {
     }
 
     .portfolio-gallery-img {
-        max-height: 450px;
+        height: 50vw;
     }
 
     .portfolio-title {
@@ -898,8 +898,8 @@ body {
 
 .story-video {
     position: relative;
-}   
-
+}     
+    
 .story-video-overlay {
     position: absolute;
     z-index: 99;
@@ -908,7 +908,7 @@ body {
     width: 100%;
     height: 100%;
     transition: opacity 0.2s ease;
-}
+}   
 
 .story-video-btn {
     position: absolute;
@@ -918,22 +918,22 @@ body {
 }
 
 .story-video-object {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: 45vw;  
     vertical-align: top; 
     overflow: hidden;
+    object-fit: cover;    
 }
 
 
 @media(max-width: 1364px) {
+    .story {
+        min-height: 550px;
+    }
     .story-content {
         padding-top: 60px;
         margin-bottom: 60px;
     }
-    .story {
-        min-height: 550px;
-    }
-
     .story__quote {
         margin-bottom: 26px;
     }
@@ -965,10 +965,8 @@ body {
         min-height: 300px;
     }
     .story-video-btn {
-        position: absolute;
-        top: 40%;
-        width: 35px;
-        height: 45px;
+        width: 30px;
+        height: 40px;
     }
 }
 
@@ -1005,7 +1003,7 @@ body {
 
 @media(max-width: 1364px) {
     .statistics__inner {
-        padding: 40px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
         min-height: 250px;
     }
 
@@ -1018,7 +1016,7 @@ body {
 
 @media(max-width: 992.98px) {
     .statistics__inner {
-        padding-top: 15px;
+        padding-top: 0;
     }
 
     .statistics__item {
